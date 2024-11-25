@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: LuckyDraw-app
+  profiles:
+    active: dev
