@@ -1,4 +1,4 @@
-package cn.practice.infrastructure.dao.po;
+package cn.practice.infrastructure.persistent.po;
 
 import java.math.BigDecimal;
 import java.util.Date;
