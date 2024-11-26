@@ -1,10 +1,10 @@
-package cn.practice.infrastructure.dao;
+package cn.practice.infrastructure.persistent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-import cn.practice.infrastructure.dao.po.Strategy;
+import cn.practice.infrastructure.persistent.po.Strategy;
 
 /**
  * @author yan

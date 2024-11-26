@@ -1,7 +1,10 @@
-package cn.practice.infrastructure.dao;
+package cn.practice.infrastructure.persistent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
+import cn.practice.infrastructure.persistent.po.Award;
 
 /**
  * @author yan
@@ -10,4 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface IAwardDao {
+  List<Award> queryAwardList();
+
 }
