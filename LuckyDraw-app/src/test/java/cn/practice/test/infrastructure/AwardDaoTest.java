@@ -15,9 +15,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author yan
  * @description 奖品持久化单元测试
- * @create 2023-12-16 13:36
+ * @create 2024-11-28
  */
 @Slf4j
 @RunWith(SpringRunner.class)
