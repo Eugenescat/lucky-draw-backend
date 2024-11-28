@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.practice</groupId>
-        <artifactId>lucky-draw</artifactId>
+        <artifactId>LuckyDraw</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
