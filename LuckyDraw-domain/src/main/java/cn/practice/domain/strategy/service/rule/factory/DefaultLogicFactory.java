@@ -38,7 +38,6 @@ public class DefaultLogicFactory {
     @Getter
     @AllArgsConstructor
     public enum LogicModel {
-
         RULE_LOCK("rule_lock", "【抽奖中规则】抽奖n次后，对应奖品可解锁抽奖", "center"),
         RULE_LUCK_AWARD("rule_luck_award", "【抽奖后规则】抽奖n次后，对应奖品可解锁抽奖", "after"),
         ;
