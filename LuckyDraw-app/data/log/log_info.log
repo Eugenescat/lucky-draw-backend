@@ -32,3 +32,38 @@
 24-12-06.15:09:41.277 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardDesc":"中奖中规则拦截，通过抽奖后规则 rule_luck_award 走兜底奖励。"}
 24-12-06.15:09:41.348 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-06.15:09:41.365 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-06.16:39:10.952 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 56989 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
+24-12-06.16:39:10.954 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-12-06.16:39:12.282 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-06.16:39:12.285 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-06.16:39:12.326 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+24-12-06.16:39:14.109 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-06.16:39:14.162 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-12-06.16:39:14.496 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.16:39:14.531 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.16:39:17.312 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-06.16:39:17.395 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 7.039 seconds (JVM running for 8.183)
+24-12-06.16:39:18.052 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-06.16:39:18.513 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-06.16:39:18.570 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.582 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.591 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.608 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100001 ruleModel: rule_weight
+24-12-06.16:39:18.678 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: xiaofuge strategyId: 100001 ruleModel: rule_weight
+24-12-06.16:39:18.680 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100001 ruleModel: rule_blacklist
+24-12-06.16:39:18.683 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100001 ruleModel: rule_blacklist
+24-12-06.16:39:18.694 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100001 ruleModel: default awardId: 107
+24-12-06.16:39:18.695 [main            ] INFO  LogicChainTest         - 测试结果：107
+24-12-06.16:39:18.779 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.808 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.815 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.825 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: user001 strategyId: 100003 ruleModel: default awardId: 108
+24-12-06.16:39:18.825 [main            ] INFO  LogicChainTest         - 测试结果：108
+24-12-06.16:39:18.879 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.901 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.920 [main            ] INFO  LogicChainTest         - 测试结果：true
+24-12-06.16:39:18.929 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100001 ruleModel: rule_weight
+24-12-06.16:39:18.939 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100001 ruleModel: rule_weight awardId: 105
+24-12-06.16:39:18.939 [main            ] INFO  LogicChainTest         - 测试结果：105
+24-12-06.16:39:19.023 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-06.16:39:19.039 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
