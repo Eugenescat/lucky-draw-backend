@@ -67,3 +67,18 @@
 24-12-06.16:39:18.939 [main            ] INFO  LogicChainTest         - 测试结果：105
 24-12-06.16:39:19.023 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-06.16:39:19.039 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-06.17:38:50.786 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 58819 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
+24-12-06.17:38:50.788 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
+24-12-06.17:38:52.168 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-06.17:38:52.171 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-06.17:38:52.215 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+24-12-06.17:38:54.001 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-06.17:38:54.053 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-12-06.17:38:54.400 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.17:38:54.427 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.17:38:57.294 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-06.17:38:57.393 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 7.211 seconds (JVM running for 8.369)
+24-12-06.17:38:57.895 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_lock code:0000
+24-12-06.17:38:57.900 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_stock code:0001
+24-12-06.17:38:57.901 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_luck_award code:0001
+24-12-06.17:38:58.022 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
