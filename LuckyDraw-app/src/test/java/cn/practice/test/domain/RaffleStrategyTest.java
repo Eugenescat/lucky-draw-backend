@@ -32,7 +32,6 @@ public class RaffleStrategyTest {
     @Resource
     private RuleWeightLogicChain ruleWeightLogicChain;
 
-
     @Resource
     private IStrategyArmory strategyArmory;
 
