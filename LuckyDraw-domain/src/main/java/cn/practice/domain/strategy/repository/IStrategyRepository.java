@@ -8,6 +8,7 @@ import cn.practice.domain.strategy.model.entity.StrategyEntity;
 import cn.practice.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.practice.domain.strategy.model.entity.StrategyEntity;
 import cn.practice.domain.strategy.model.entity.StrategyRuleEntity;
+import cn.practice.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -32,4 +33,5 @@ public interface IStrategyRepository {
 
   String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
+  StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
 }

@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 import java.security.SecureRandom;
 import java.util.*;
 
-
+import cn.practice.types.common.Constants;
 import cn.practice.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.practice.domain.strategy.model.entity.StrategyEntity;
 import cn.practice.domain.strategy.model.entity.StrategyRuleEntity;
@@ -16,6 +16,11 @@ import cn.practice.domain.strategy.repository.IStrategyRepository;
 import cn.practice.types.enums.ResponseCode;
 import cn.practice.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
+
+/**
+ * @description 策略装配库(兵工厂)，负责初始化策略计算
+ * @create 2023-12-23 10:02
+ */
 
 @Slf4j
 @Service
@@ -45,7 +50,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
       List<Integer> ruleWeightValues = ruleWeightValueMap.get(key);
       ArrayList<StrategyAwardEntity> strategyAwardEntitiesClone = new ArrayList<>(strategyAwardEntities);
       strategyAwardEntitiesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getAwardId()));
-      assembleLotteryStrategy(String.valueOf(strategyId).concat("_").concat(key), strategyAwardEntitiesClone);
+      assembleLotteryStrategy(String.valueOf(strategyId).concat(Constants.UNDERLINE).concat(key), strategyAwardEntitiesClone);
     }
 
     return true;

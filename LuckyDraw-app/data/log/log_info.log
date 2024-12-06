@@ -1,38 +1,34 @@
-24-12-05.16:09:26.107 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 31809 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
-24-12-05.16:09:26.110 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-24-12-05.16:09:27.560 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-12-05.16:09:27.564 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-12-05.16:09:27.603 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-24-12-05.16:09:29.551 [main            ] INFO  Version                - Redisson 3.23.4
-24-12-05.16:09:29.599 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-12-05.16:09:29.972 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-12-05.16:09:30.001 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-12-05.16:09:32.595 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-12-05.16:09:32.681 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.164 seconds (JVM running for 8.453)
-24-12-05.16:09:33.294 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:xiaofuge strategyId:100001 ruleModel:rule_blacklist
-24-12-05.16:09:33.336 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-12-05.16:09:33.851 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-12-05.16:09:33.909 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:xiaofuge strategyId:100001 ruleModel:rule_weight
-24-12-05.16:09:33.916 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: xiaofuge ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
-24-12-05.16:09:34.132 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"xiaofuge"}
-24-12-05.16:09:34.149 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":105}
-24-12-05.16:09:34.235 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-12-05.16:09:34.299 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-12-05.16:10:46.705 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 31845 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
-24-12-05.16:10:46.707 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-24-12-05.16:10:48.023 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-12-05.16:10:48.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-12-05.16:10:48.066 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-24-12-05.16:10:49.726 [main            ] INFO  Version                - Redisson 3.23.4
-24-12-05.16:10:49.773 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-24-12-05.16:10:50.110 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-12-05.16:10:50.139 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-24-12-05.16:10:52.760 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-12-05.16:10:52.846 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.714 seconds (JVM running for 7.859)
-24-12-05.16:10:53.440 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:user003 strategyId:100001 ruleModel:rule_blacklist
-24-12-05.16:10:53.478 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-12-05.16:10:53.891 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-12-05.16:10:54.128 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user003"}
-24-12-05.16:10:54.146 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":100}
-24-12-05.16:10:54.238 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-12-05.16:10:54.252 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-06.14:46:48.395 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 53045 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
+24-12-06.14:46:48.398 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-06.14:46:49.765 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-06.14:46:49.768 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-06.14:46:49.810 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+24-12-06.14:46:51.629 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-06.14:46:51.679 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-12-06.14:46:52.040 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.14:46:52.069 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.14:46:54.859 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-06.14:46:54.969 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.178 seconds (JVM running for 8.365)
+24-12-06.15:09:33.357 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_201 on yandeMacBook-Air.local with PID 53617 (started by yan in /Users/yan/Dev/lucky-draw/LuckyDraw-app)
+24-12-06.15:09:33.358 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-06.15:09:34.746 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-06.15:09:34.750 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-06.15:09:34.791 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+24-12-06.15:09:36.655 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-06.15:09:36.705 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-12-06.15:09:37.063 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.15:09:37.092 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-12-06.15:09:39.696 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-06.15:09:39.774 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.079 seconds (JVM running for 8.21)
+24-12-06.15:09:40.420 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-06.15:09:40.867 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-06.15:09:40.937 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-06.15:09:41.001 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-06.15:09:41.044 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-06.15:09:41.085 [main            ] INFO  RuleLockLogicFilter    - 规则过滤-次数锁 userId:xiaofuge strategyId:100003 ruleModel:rule_lock
+24-12-06.15:09:41.110 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: xiaofuge ruleModel: rule_lock code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-12-06.15:09:41.110 [main            ] INFO  AbstractRaffleStrategy - 【临时日志】中奖中规则拦截，通过抽奖后规则 rule_luck_award 走兜底奖励。
+24-12-06.15:09:41.259 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100003,"userId":"xiaofuge"}
+24-12-06.15:09:41.277 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardDesc":"中奖中规则拦截，通过抽奖后规则 rule_luck_award 走兜底奖励。"}
+24-12-06.15:09:41.348 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-06.15:09:41.365 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
