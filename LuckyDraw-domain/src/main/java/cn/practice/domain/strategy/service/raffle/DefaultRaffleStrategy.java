@@ -1,10 +1,13 @@
 package cn.practice.domain.strategy.service.raffle;
 
+import cn.practice.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.practice.domain.strategy.model.valobj.RuleTreeVO;
 import cn.practice.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.practice.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import cn.practice.domain.strategy.repository.IStrategyRepository;
 import cn.practice.domain.strategy.service.AbstractRaffleStrategy;
+import cn.practice.domain.strategy.service.IRaffleAward;
+import cn.practice.domain.strategy.service.IRaffleStock;
 import cn.practice.domain.strategy.service.armory.IStrategyDispatch;
 import cn.practice.domain.strategy.service.rule.chain.ILogicChain;
 import cn.practice.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
@@ -13,6 +16,8 @@ import cn.practice.domain.strategy.service.rule.tree.factory.engine.IDecisionTre
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author Fuzhengwei practice.cn @小傅哥
  * @description 默认的抽奖策略实现
@@ -20,7 +25,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward {
 
     public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory defaultChainFactory, DefaultTreeFactory defaultTreeFactory) {
         super(repository, strategyDispatch, defaultChainFactory, defaultTreeFactory);
@@ -39,6 +44,7 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
             return DefaultTreeFactory.StrategyAwardVO.builder().awardId(awardId).build();
         }
         RuleTreeVO ruleTreeVO = repository.queryRuleTreeVOByTreeId(strategyAwardRuleModelVO.getRuleModels());
+        System.out.println("ruleTreeVO = " + ruleTreeVO);
         if (null == ruleTreeVO) {
             throw new RuntimeException("存在抽奖策略配置的规则模型 Key，未在库表 rule_tree、rule_tree_node、rule_tree_line 配置对应的规则树信息 " + strategyAwardRuleModelVO.getRuleModels());
         }
@@ -55,5 +61,11 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
         repository.updateStrategyAwardStock(strategyId, awardId);
     }
+
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
+        return repository.queryStrategyAwardList(strategyId);
+    }
+
 
 }
