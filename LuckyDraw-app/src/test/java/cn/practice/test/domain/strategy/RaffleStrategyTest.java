@@ -1,4 +1,4 @@
-package cn.practice.test.domain;
+package cn.practice.test.domain.strategy;
 
 import cn.practice.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.practice.domain.strategy.model.entity.RaffleFactorEntity;

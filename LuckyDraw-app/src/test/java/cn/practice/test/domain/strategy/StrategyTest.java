@@ -1,4 +1,4 @@
-package cn.practice.test.domain;
+package cn.practice.test.domain.strategy;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
