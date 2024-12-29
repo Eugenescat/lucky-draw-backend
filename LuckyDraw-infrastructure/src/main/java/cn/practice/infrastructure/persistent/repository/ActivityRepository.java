@@ -147,7 +147,7 @@ public class ActivityRepository implements IActivityRepository {
         try {
           // 1. 写入订单
           raffleActivityOrderDao.insert(raffleActivityOrder);
-          // 2. 更新账户
+          // 2. 更新账户，返回更新条数
           int count = raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
           // 3. 创建账户 - 更新为0，则账户不存在，创新新账户。
           if (0 == count) {
