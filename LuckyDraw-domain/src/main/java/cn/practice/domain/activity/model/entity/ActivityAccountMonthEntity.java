@@ -1,4 +1,4 @@
-package cn.practice.infrastructure.persistent.po;
+package cn.practice.domain.activity.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +16,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RaffleActivityAccountMonth {
+public class ActivityAccountMonthEntity {
 
     /** 自增ID */
     private String id;

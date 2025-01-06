@@ -1,4 +1,4 @@
-package cn.practice.domain.activity.service.rule;
+package cn.practice.domain.activity.service.quota.rule;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥

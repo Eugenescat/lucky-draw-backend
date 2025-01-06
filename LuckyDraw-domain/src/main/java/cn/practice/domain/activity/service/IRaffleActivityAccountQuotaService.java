@@ -1,15 +1,13 @@
 package cn.practice.domain.activity.service;
 
 import cn.practice.domain.activity.model.entity.SkuRechargeEntity;
-import cn.practice.domain.activity.model.entity.ActivityOrderEntity;
-import cn.practice.domain.activity.model.entity.ActivityShopCartEntity;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 抽奖活动订单接口
  * @create 2024-03-16 08:38
  */
-public interface IRaffleOrder {
+public interface IRaffleActivityAccountQuotaService {
 
   /**
    * 创建 sku 账户充值订单，给用户增加抽奖次数

@@ -1,16 +1,16 @@
-package cn.practice.domain.activity.service;
+package cn.practice.domain.activity.service.quota;
 
-import cn.practice.domain.activity.aggregate.CreateOrderAggregate;
+import cn.practice.domain.activity.model.aggregate.CreateOrderAggregate;
 import cn.practice.domain.activity.model.entity.ActivityCountEntity;
 import cn.practice.domain.activity.model.entity.ActivityEntity;
 import cn.practice.domain.activity.model.entity.ActivityOrderEntity;
-import cn.practice.domain.activity.model.entity.ActivityShopCartEntity;
 import cn.practice.domain.activity.model.entity.ActivitySkuEntity;
 import cn.practice.domain.activity.model.entity.SkuRechargeEntity;
 import cn.practice.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import cn.practice.domain.activity.model.valobj.OrderStateVO;
 import cn.practice.domain.activity.repository.IActivityRepository;
-import cn.practice.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import cn.practice.domain.activity.service.IRaffleActivitySkuStockService;
+import cn.practice.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
@@ -23,9 +23,9 @@ import java.util.Date;
  * @create 2024-03-16 08:41
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock {
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
-  public RaffleActivityService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+  public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
     super(activityRepository, defaultActivityChainFactory);
   }
 

@@ -1,9 +1,8 @@
 package cn.practice.domain.activity.repository;
 
-import cn.practice.domain.activity.aggregate.CreateOrderAggregate;
-import cn.practice.domain.activity.model.entity.ActivityCountEntity;
-import cn.practice.domain.activity.model.entity.ActivityEntity;
-import cn.practice.domain.activity.model.entity.ActivitySkuEntity;
+import cn.practice.domain.activity.model.aggregate.CreateOrderAggregate;
+import cn.practice.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import cn.practice.domain.activity.model.entity.*;
 import cn.practice.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -36,5 +35,16 @@ public interface IActivityRepository {
   void updateActivitySkuStock(Long sku);
 
   void clearActivitySkuStock(Long sku);
+
+  UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+
+  ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+  ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+  ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+
+  void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+
 
 }

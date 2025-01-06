@@ -1,4 +1,4 @@
-package cn.practice.domain.activity.aggregate;
+package cn.practice.domain.activity.model.aggregate;
 
 import cn.practice.domain.activity.model.entity.ActivityAccountEntity;
 import cn.practice.domain.activity.model.entity.ActivityOrderEntity;
